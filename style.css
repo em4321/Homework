@@ -1,0 +1,341 @@
+@font-face {
+  font-family: Poppins200;
+  src: url(./1Poppins200.woff2) format("woff2"), 
+  url(./2Poppins200.woff2) format("woff2"), 
+  url(./3Poppins200.woff2) format("woff2");
+  font-weight: 200;
+}
+@font-face {
+  font-family: Poppins400;
+  src: url(./1Poppins400.woff2) format("woff2"),
+  url(./2Poppins400.woff2) format("woff2"),
+  url(./3Poppins400.woff2) format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Poppins600;
+  src: url(./1Poppins600.woff2) format("woff2"),
+  url(./2Poppins600.woff2) format("woff2"),
+  url(./3Poppins600.woff2) format("woff2");
+  font-weight: 600;
+}
+.background {
+    background-color: #FFF5E0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-me {
+  border-radius: 5px 15px 5px 15px;
+  background-color: #ffffff;
+  height: 38rem;
+  width: 115rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+}
+.work {
+    border-radius: 5px 15px 5px 15px;
+    background-color: #ffffff;
+    width: 65rem;
+    height: 20rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    padding: 2.5rem;
+}
+.education {
+  border-radius: 5px 15px 5px 15px;
+  background-color: #ffffff;
+  width: 65rem;
+  height: 15rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+}
+.key-skills {
+  border-radius: 5px 15px 5px 15px;
+  background-color: #ffffff;
+  width: 65rem;
+  height: 20rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+}
+#key-skills > h2, p {
+  margin-left: 1rem;
+}
+.achievements {
+  border-radius: 5px 15px 5px 15px;
+  background-color: #ffffff;
+  height: 35rem;
+  width: 115rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+}
+.certificates {
+  border-radius: 5px 15px 5px 15px;
+  background-color: #ffffff;
+  height: 35rem;
+  width: 115rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+}
+.hobbies-and-interests {
+  border-radius: 5px 15px 5px 15px;
+  background-color: #ffffff;
+  margin: auto;
+  width: 65rem;
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+}
+.bee-iframe {
+  border-radius: 5px 15px 5px 15px;
+  background-color: #ffffff;
+  width: 65rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+}
+.about-me:hover, .contact:hover, .work:hover, .education:hover, .key-skills:hover, .achievements:hover, .certificates:hover, .hobbies-and-interests:hover, .bee-iframe:hover {
+  box-shadow: 10px 10px 10px 10px lightblue;
+}
+.video .bee-iframe {
+  margin-right: 2rem;
+  width: 500px;
+}
+html {
+  font-size: 62.5%;
+  color: #141E46;
+  font-family: "Poppins200";
+}
+.heading {
+  font-size: 3.8rem;
+  width: 50rem;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  font-family: "Poppins600";
+}
+h2 {
+  font-size: 3rem;
+  font-family: "Poppins400";
+  padding: 15px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+  .container.back-to-about-me {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .follow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 2.5rem;
+  }
+  .container.video {
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    }
+li {
+  list-style: square;
+}
+.back-to-cv {
+text-align: center;
+}
+.back-to-cv > strong {
+  font-size: 3rem;
+}
+img, video, iframe, .nav, .follow-me {
+border: 0.3rem solid #141E46;
+}
+img, .overlay {
+  width: 35%;
+  border-radius: 5px 35px 5px 35px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+img { 
+  opacity: 0.7;
+}
+.contact {
+  width: 40rem;
+  margin: left;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  border-radius: 5px 15px 5px 15px;
+  background-color: #ffffff;
+}
+.contact > ul > li {
+  list-style: none;
+}
+.nav {
+    width: 600px;
+    margin: auto;
+    padding: 15px;
+    bottom: 30rem;
+    top: 30rem;
+}
+.picture {
+display: flex;
+position: relative;
+overflow: hidden;
+}
+.picture:hover .overlay, .picture:focus-within .overlay {
+  transform: translateX(0);
+}
+.overlay {
+  color: rgb(175, 27, 140);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  opacity: 50%;
+  transform: translateY(100%);
+  transition: all 1s ease-in-out;
+}
+.follow-me { 
+    opacity: 0.5;
+  }
+img:hover, .follow-me:hover {
+  opacity: 1;
+  box-shadow: 10px 10px 10px 10px lightblue;
+}
+aside {
+  width: 36rem;
+  height: 18rem;
+  overflow: auto;
+}
+.follow-me > a > strong {
+    font-size: 3rem;
+}
+.follow-me > h2 {
+text-align: center;
+}
+.nav a > strong {
+    font-size: 3rem;
+    text-align: center;
+}
+.back-to-about-me {
+  text-align: center;
+  margin: auto;
+}
+.back-to-about-me > h3 > a > strong {
+    font-size: 3rem;
+}
+a[href]:hover, button:hover {
+    color: #FF6969;
+  }
+  a[href] {
+    font-size: 2.2rem;
+    color: #141E46;
+  }
+  .background-photo {
+  text-align: center;
+  }
+  p, li, em, strong, del, address, .postcode, figcaption {
+    font-size: 2.2rem;
+  }
+  .nav, video, .follow-me {
+    background-color: #973350;
+    border-radius: 5px 15px 5px 15px;
+  }
+  .follow-me {
+    background-color: #973350;
+    padding: 15px;
+  }
+  .follow-me > ul > li > a::after, .background-photo > span > a::after{
+    content:'(external link)';
+  }
+  .follow-me > ul > li {
+    list-style: none;
+  }
+  #follow {
+    position: sticky;
+    bottom: 35rem;
+    left: 100rem;
+  }
+  .footer {
+background-color: #141E46;
+height: 3rem;
+margin-top: 2rem;
+  }
+.footer P small {
+color: #ffffff;
+  }
+  @media screen and (min-width: 1200px) {
+   .nav, video, .follow-me {
+    background-color: #FF6969;
+   }
+    a[href]:hover, button:hover {
+        background-color: #973350;
+}
+.achievements, .certificates {
+  width: 75rem;
+  height: 25rem;
+}
+.about-me {
+  width: 80rem;
+  height: 30rem;
+}
+  }
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+    .nav, video, .follow-me {
+     background-color: #d35e9b;
+    }
+    a[href]:hover, button:hover {
+    background-color: #f2b8b8;
+        }
+      }
+      @media (prefers-color-scheme: light) {
+        .background {
+        background-image: url("./leone-venter-VieM9BdZKFo-unsplash.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+ 
+ @media (prefers-color-scheme: dark) {
+  .nav, video, .follow-me, .about-me, .work, .education, .key-skills, .achievements, .certificates , .hobbies-and-interests, .contact, .bee-iframe {
+        background-color: #c07fa176;
+    }
+    a[href]:hover, button:hover {
+        background-color: #076fe7;
+      }
+      .background {
+        background-color: #282152;
+      }
+      *, .background-photo > span > a, .follow-me > ul > li > a {
+        color:  #ffffff;
+ }
+ }
+ @media screen and (min-width: 400px) and (max-width: 600px) {
+    #follow {
+        width: 40px;
+    }
+ }
+ @media screen and (min-width: 400px) and (max-width: 600px) {
+    .video {
+        display: flex;
+        flex-wrap: wrap;
+
+ }
+}
