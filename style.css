@@ -132,6 +132,7 @@ h2 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
   .container.back-to-about-me {
     flex-wrap: wrap;
@@ -160,12 +161,6 @@ text-align: center;
 img, video, iframe, .nav, .follow-me {
 border: 0.3rem solid #141E46;
 }
-img, .overlay {
-  width: 35%;
-  border-radius: 5px 35px 5px 35px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
 img { 
   opacity: 0.7;
 }
@@ -181,9 +176,9 @@ img {
   list-style: none;
 }
 .nav {
-    width: 600px;
+    width: 60rem;
     margin: auto;
-    padding: 15px;
+    padding: 1.5rem;
     bottom: 30rem;
     top: 30rem;
 }
@@ -267,7 +262,7 @@ a[href]:hover, button:hover {
   }
   #follow {
     position: sticky;
-    bottom: 35rem;
+    bottom: 50rem;
     left: 100rem;
   }
   .footer {
@@ -294,7 +289,7 @@ color: #ffffff;
   height: 30rem;
 }
   }
-@media screen and (min-width: 600px) and (max-width: 1200px) {
+@media screen and (min-width: 530px) and (max-width: 1200px) {
     .nav, video, .follow-me {
      background-color: #d35e9b;
     }
@@ -326,15 +321,48 @@ color: #ffffff;
         color:  #ffffff;
  }
  }
- @media screen and (min-width: 400px) and (max-width: 600px) {
+ @media screen and (min-width: 880px) {
     #follow {
-        width: 40px;
+      right: 1rem;
+      margin: 3rem;
     }
+
+    .contact {
+      width: 48rem;
+      padding: 2.8rem;
+    }
+    .nav {
+      padding: 2.8rem;
+      margin-left: 3rem;
+  }
+}
+  @media screen and (min-width: 1200px) {
+    #follow {
+      position: fixed;
+    }
+
  }
- @media screen and (min-width: 400px) and (max-width: 600px) {
+ @media screen and (min-width: 530px) {
+ img, .overlay {
+  width: 40%;
+  border-radius: 5px 35px 5px 35px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ }
+ @media screen and (min-width: 530px) and (max-width: 600px) {
     .video {
         display: flex;
         flex-wrap: wrap;
 
  }
+}
+ @media screen and (min-width: 1310px) {
+  .container > header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
